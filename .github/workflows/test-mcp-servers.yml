@@ -9,6 +9,7 @@ on:
 
 jobs:
   test-mcp-integration:
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -78,6 +79,7 @@ jobs:
           echo "✓ All MCP server checks passed!"
 
   test-mcp-config-flag:
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

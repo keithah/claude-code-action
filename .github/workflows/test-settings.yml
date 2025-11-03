@@ -9,6 +9,7 @@ on:
 
 jobs:
   test-settings-inline-allow:
+    timeout-minutes: 6
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
@@ -58,6 +59,7 @@ jobs:
           fi
 
   test-settings-inline-deny:
+    timeout-minutes: 6
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
@@ -90,6 +92,7 @@ jobs:
           fi
 
   test-settings-file-allow:
+    timeout-minutes: 6
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
@@ -144,6 +147,7 @@ jobs:
           fi
 
   test-settings-file-deny:
+    timeout-minutes: 6
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
