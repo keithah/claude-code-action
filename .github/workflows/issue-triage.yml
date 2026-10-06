@@ -6,7 +6,7 @@ on:
 
 jobs:
   triage-issue:
-    runs-on: ubuntu-latest
+    runs-on: ubicloud-standard-2
     timeout-minutes: 10
     permissions:
       contents: read
