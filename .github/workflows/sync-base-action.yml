@@ -14,7 +14,7 @@ permissions:
 jobs:
   sync-base-action:
     name: Sync base-action to claude-code-base-action repository
-    runs-on: ubuntu-latest
+    runs-on: ubicloud-standard-2
     environment: production
     timeout-minutes: 10
     steps:
